@@ -1,5 +1,6 @@
 .reset-a {
     text-decoration: none;
+    color: #fff
 }
 
 .reset-ul {
@@ -7,7 +8,12 @@
     padding: 0;
     margin: 0
 }
-
+.display-flex {
+    display: flex
+}
+.display-block {
+    display: block
+}
 .container {   /* For Grid System */
     width: 100%;
     padding-right: 15px;
@@ -15,7 +21,9 @@
     margin-right: auto;
     margin-left: auto
 }
-
-.row {
-    
+.row {   /* For Grid System */
+    display: flex;
+    justify-content: space-between;
+    margin-right: -15px;
+    margin-left: -15px
 }

@@ -3,6 +3,7 @@
 html {
     box-sizing: border-box;
 }
+
 *,
 *::before,
 *::after {
@@ -11,23 +12,31 @@ html {
     box-sizing: inherit;
 }
 
+:root {  /* Css Variables */
+    --p-main: 15px;
+}
 
-/* ===== End Global ===== */
+
+/* ===================== End Global ===== */
 
 /* Part Grid System */
 
 @media (max-width: 550px) { /* For Small Screen */
     .container {
-        
+        max-width: 530px
     }
 }
 
 @media (min-width: 551px) { /* For Medium Screen */
-    
+    .container {
+        max-width: 720px
+    }
 }
 
 @media (min-width: 750px) { /* For Large Screen */
-    
+    .container {
+        max-width: 970px
+    }
 }
 
 /* ==== End Grid System ===== */

@@ -1,7 +1,66 @@
 /* Part Header */
 
-nav {
-    background: #f00
+header .navbar {
+    background: #f00;
+    position: relative;
+    
+}
+header .brand {
+    padding: var(--p-main, 5px);
+}
+header .main-div {
+    background: #333;
+    margin: 5px;
+    border-radius: 5px;
+    border: 3px solid #333;
+}
+header .main-div .nav-menu {
+    display: flex
+}
+header .nav-item {
+    padding: 10px
+}
+header .dropdown-menu {
+    background: #999;
+    position: absolute;
+    top: 90%;;
+    height: 150px;
+    border: 1px solid transparent;
+    transition: all 1s ease-in-out 0s
+    
+}
+header .dropdown-item {
+    padding: 10px
+}
+
+@media (max-width: 550px) { /* For Small Screen */
+    header .main-div {
+        position: absolute;
+        right: 0;
+        top: 100%;
+        margin: 0;
+        border-radius: 0;
+        border: 0
+    }
+    header .main-div .nav-menu {
+        display: block;
+    }
 }
 
 /* ===== End Header ===== */
+
+.nav-item:hover {
+    background: #f00;
+}
+.dropdown-item:hover {
+    background: #;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+    transition: all 0s ease-in-out 0s
+}
+header .dropdown:hover .dropdown-menu {
+    display: block;
+    transition: 1s
+}
+
+
