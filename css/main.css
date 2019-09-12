@@ -8,6 +8,12 @@ header .navbar {
 header .brand {
     padding: var(--p-main, 5px);
 }
+header .icon-top {
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    font-size: 20px
+}
 header .main-div {
     background: #333;
     margin: 5px;
@@ -63,4 +69,11 @@ header .dropdown:hover .dropdown-menu {
     transition: 1s
 }
 
+
+h2 {
+    background: repeating-radial-gradient(#080 50px, #fff);
+    text-transform: capitalize;
+    height: 250px;
+    width: 250px
+}
 
